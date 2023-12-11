@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Album</title>
+<style>
+
+
+    body {
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #333; 
+      color: #ffffff;
+    }
+
+    .content {
+      padding: 20px;
+    }
+
+    .song-list {
+      list-style: none;
+      padding: 0;
+    }
+    
+    .song-list li {
+      background-color: #592e5f; 
+      border-radius: 5px;
+      padding: 10px;
+      margin-bottom: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: #F9F9F9;
+      transition: background-color 0.3s;
+    }
+  
+    .song-list li:hover {
+      background-color: #4a1e50; 
+    }
+    
+    .song-list li button {
+      background-color: #120309; 
+      color: #F9F9F9;
+      border: none;
+      border-radius: 5px;
+      padding: 5px 10px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+  
+    .song-list li button:hover {
+      background-color: #0e0104; 
+    }
+     
+  </style>
+
+
+<div class="content">
+    <div class="Album">
+      <h2>[Album name]</h2>
+      
+      <ul class="song-list">
+        
+        <li>Song 1 </li>
+        <li>Song 2 </li>
+        <li>Song 3 </li>
+    
+      </ul>
+    </div>
+  </div>
+  
+  </body>

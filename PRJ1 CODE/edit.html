@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Edit Playlist</title>
+<style>
+
+  
+
+  body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #333; 
+    color: #ffffff;
+  }
+  
+  .navbar {
+    background-color: #66635B; 
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #ffffff;
+  }
+  
+  .content {
+    padding: 20px;
+  }
+  
+  .edit-playlist {
+    background-color: #555; 
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+  }
+  
+  .edit-playlist h2 {
+    color: #F9F9F9;
+    margin-bottom: 20px;
+  }
+  
+  .song-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .song-list li {
+    background-color: #592e5f; 
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #F9F9F9;
+    transition: background-color 0.3s;
+  }
+
+  .song-list li:hover {
+    background-color: #4a1e50; 
+  }
+  
+  .song-list li button {
+    background-color: #120309; 
+    color: #F9F9F9;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .song-list li button:hover {
+    background-color: #0e0104; 
+  }
+  
+  .add-song {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .add-song input {
+    flex-grow: 1;
+    margin-right: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #ffffff; 
+    color: #000000;
+  }
+  
+  .add-song button {
+    background-color: #120309; 
+    color: #F9F9F9;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .add-song button:hover {
+    background-color: #1f022a; 
+  }
+</style>
+
+
+</style>
+</head>
+<body>
+
+
+  <main class="content">
+    <section class="edit-playlist">
+      <h2>Edit [Playlist Name]</h2>
+      <form class="add-song">
+        <input type="text" placeholder="Add a new song..." />
+        <button type="submit">Add</button>
+      </form>
+      <ul class="song-list">
+        <li>Song 1 <button>Remove</button></li>
+        <li>Song 2 <button>Remove</button></li>
+        <li>Song 3 <button>Remove</button></li>
+      </ul>
+    </section>
+  </main>
+  
+  </body>
+  </html>
